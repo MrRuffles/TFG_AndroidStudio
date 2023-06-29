@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfileActivity">
+
+
+
+    <include layout="@layout/header_layout" />
+    <include layout="@layout/footer_layout" />
+
+
+    <TextView
+        android:id="@+id/form_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Perfil"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        >
+
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Nombre: "
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/name_label1"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/name_label"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_label"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Email: "
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/email_label1"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_label1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/email_label"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/loc_label"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_label"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Localidad: "
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/loc_label1"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_label1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/loc_label"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tel_label"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loc_label"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Telefono: "
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tel_label1"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loc_label1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/tel_label"
+
+            android:text=""/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/profile_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Cerrar Sesion"
+        android:textColor="@color/white"
+        android:backgroundTint="#42A4FF"/>
+
+
+
+
+</RelativeLayout>
+
